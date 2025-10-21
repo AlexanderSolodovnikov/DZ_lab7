@@ -6,7 +6,7 @@
 
 ### Алгоритм
 1. *Начало*
-2. Ввести число c
+2. Ввести число n
 3. Проверить: находится ли число в диапозоне от 1 до 13?
 - `Если нет - вывести` "Ошибка: Число должно быть от 1 до 13"
 4. Определить слово, соответствующее числу:
@@ -28,5 +28,68 @@
 
 
 ### Блок-схема
-!
-   
+ <img width="900" height="1200" alt="lb7" src="https://github.com/user-attachments/assets/f6848efa-af5c-43d3-9100-f77cfc5b45bc" />
+
+
+## 2. Реализация программы
+```
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_CTYPE, "RUS");
+	int n;
+	printf("Введите число от 1 до 13:");
+	scanf("%d", &n);
+	switch (n) {
+	case 1:
+		printf("Один");
+		break;
+	case 2:
+		printf("Два");
+		break;
+	case 3:
+		printf("Три");
+		break;
+	case 4:
+		printf("Четыре");
+		break;
+	case 5:
+		printf("Пять");
+		break;
+	case 6:
+		printf("Шесть");
+		break;
+	case 7:
+		printf("Семь");
+		break;
+	case 8:
+		printf("Восемь");
+		break;
+	case 9:
+		printf("Девять");
+		break;
+	case 10:
+		printf("Десять");
+		break;
+	case 11:
+		printf("Одиннадцать");
+		break;
+	case 12:
+		printf("Двенадцать");
+		break;
+	case 13:
+		printf("Тринадцать");
+		break;
+	default:
+		printf("Ошибка: Число должно быть от 1 до 13");
+
+	}
+```
+
+## 3. Результаты работы программы
+Введите число от 1 до 13: 14
+Ошибка: Число должно быть от 1 до 13
+
+## 4. Информация о разработчике
+Солодовников Александр [БИЦ-252]
